@@ -1,0 +1,176 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #f1f5f9;
+    --accent: #38bdf8;
+    --text: #1e293b;
+    --bg: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--bg);
+    box-shadow: 0 2px 8px rgba(30,41,59,0.04);
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    color: #64748b;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(30,41,59,0.06);
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+ul, ol {
+    padding-left: 1.2rem;
+}
+
+.skills-list, .tools-list, .other-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li, .tools-list li, .other-list li {
+    background: var(--secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.experience {
+    margin-bottom: 1.2rem;
+}
+
+.experience h3 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.experience span {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+.project {
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 0.7rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background: var(--accent);
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-list a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-list a:hover {
+    color: var(--accent);
+}
+
+.icons {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.icons a {
+    color: var(--primary);
+    font-size: 1.6rem;
+    transition: color 0.2s;
+}
+
+.icons a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+}
