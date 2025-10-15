@@ -1,94 +1,80 @@
-/* -------- Configuração geral -------- */
-* {
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f7fb;
+  color: #1e293b;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", sans-serif;
   line-height: 1.6;
-  color: #1e293b;
-  background-color: #f8fafc;
-  padding: 1.5rem;
 }
 
-/* -------- Cabeçalho -------- */
-.header {
+header {
   text-align: center;
-  margin-bottom: 2.5rem;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 1rem;
+  padding: 2rem 1rem 1rem;
 }
 
-.header h1 {
-  font-size: 1.9rem;
-  color: #0f172a;
+header h1 {
+  font-size: 1.8rem;
+  color: #2563eb;
+  margin-bottom: 0.3rem;
 }
 
-.header p {
-  color: #475569;
-  margin: 0.2rem 0;
+header p {
+  margin: 0.3rem 0;
 }
 
-.contact a {
-  color: #0369a1;
+header a {
+  color: #2563eb;
   text-decoration: none;
 }
 
-.contact a:hover {
+header a:hover {
   text-decoration: underline;
 }
 
-/* -------- Seções -------- */
-main section {
-  background: #fff;
-  border-radius: 10px;
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-main section:hover {
-  transform: translateY(-2px);
+section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
-  color: #0f172a;
-  margin-bottom: 0.6rem;
-  border-left: 4px solid #0ea5e9;
-  padding-left: 0.6rem;
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
 }
 
 ul {
-  margin-left: 1.2rem;
-  list-style-type: disc;
-  color: #334155;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
 }
 
-/* -------- Botão de download -------- */
-.download-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.3rem;
-  background-color: #0ea5e9;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background 0.3s;
+li {
+  margin-bottom: 0.4rem;
 }
 
-.download-btn:hover {
-  background-color: #0284c7;
-}
-
-/* -------- Rodapé -------- */
 footer {
   text-align: center;
-  color: #64748b;
-  margin-top: 2rem;
+  color: #94a3b8;
+  margin: 2rem 0 1rem;
   font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
 }
